@@ -20,7 +20,7 @@ st.write(cl_SEX)
 cl_SEX.columns = ['SEX', 'number']
 
 # Plotly-Balkendiagramm erstellen
-fig = px.bar(cl_SEX, x='SEX', y='number', title="Distribution of the SEX", color_discrete_sequence=['#FF5733'])
+fig = px.bar(cl_SEX, x='SEX', y='number', title="Distribution of the Gender", color_discrete_sequence=['#FF5733'])
 
 # Plot in Streamlit anzeigen
 st.plotly_chart(fig)
