@@ -65,12 +65,12 @@ st.plotly_chart(om_SEX_OWBW_fig)
 # ts table
 lb_LBCAT_GROUP = lb["LBCAT"].value_counts().reset_index()
 
-# Benutzerdefinierte Farbskala erstellen
-custom_colors = [(0, "#FFE6D5"), (0.5, "#FF8A66"), (1, "#FF5733")]
+# Creating a user definite color scala
+custom_colors = ["#FFB199", "#FF8A66", "#FF7251", "#FF5733", "#E04E2E", "#CC462A"]
 
-lb_LBCAT_GROUP_fig = px.bar(lb_LBCAT_GROUP, x="index", y="LBCAT", 
+lb_LBCAT_GROUP_fig = px.bar(lb_LBCAT_GROUP, x="count", y="LBCAT", 
                             title="Anzahl der getesteten Parameter",
                             labels={"index": "Tested Parameter", "LBCAT": "Counts"},
                             color="LBCAT",  # Setze die Farbe basierend auf den "LBCAT"-Werten
-                            color_continuous_scale=custom_colors)
+                            color_discrete_sequence=custom_colors)
 st.plotly_chart(lb_LBCAT_GROUP_fig)
