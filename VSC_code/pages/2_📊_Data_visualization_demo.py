@@ -70,7 +70,7 @@ custom_colors = ["#FFB199", "#FF8A66", "#FF7251", "#FF5733", "#E04E2E", "#CC462A
 
 lb_LBCAT_GROUP_fig = px.bar(lb_LBCAT_GROUP, x="count", y="LBCAT", 
                             title="Anzahl der getesteten Parameter",
-                            labels={"index": "Tested Parameter", "LBCAT": "Counts"},
+                            labels={"index": "Tested Parameter", "LBCAT": "LBCAT"},
                             color="LBCAT",  # Setze die Farbe basierend auf den "LBCAT"-Werten
                             color_discrete_sequence=custom_colors)
 st.plotly_chart(lb_LBCAT_GROUP_fig)

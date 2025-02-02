@@ -12,7 +12,7 @@ custom_colors = ["#FFB199", "#FF8A66", "#FF7251", "#FF5733", "#E04E2E", "#CC462A
 
 cl_abbreviated_preImputation_fig = px.bar(cl_CLTPTNUM, x="CLTPTNUM", y="count", 
                             title="Distribution of CLTPTNUM before the Imputation",
-                            labels={"index": "Tested Parameter", "LBCAT": "Counts"},
+                            labels={"index": "CLTPTNUM", "LBCAT": "Counts"},
                             color_discrete_sequence=custom_colors)
 st.plotly_chart(cl_abbreviated_preImputation_fig)
 
@@ -46,7 +46,7 @@ custom_colors = ["#FFB199", "#FF8A66", "#FF7251", "#FF5733", "#E04E2E", "#CC462A
 
 cl_abbreviated_fig = px.bar(cl_CLTPTNUM_imputation, x="CLTPTNUM", y="count", 
                             title="Distribution of CLTPTNUM after the Imputation",
-                            labels={"CLTPTNUM": "Tested Parameter", "count": "Counts"},
+                            labels={"CLTPTNUM": "CLTPTNUM", "count": "Counts"},
                             #color="CLTPTNUM",  # Setze die Farbe basierend auf den "LBCAT"-Werten
                             color_discrete_sequence=custom_colors)
 st.plotly_chart(cl_abbreviated_fig)
