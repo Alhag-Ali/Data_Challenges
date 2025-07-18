@@ -5,3 +5,6 @@
 Preclinical study control data
 
 components: python and Streamlit
+
+<img width="1021" height="573" alt="image" src="https://github.com/user-attachments/assets/0b94191c-aea8-4616-83ee-3b9a83b0ed73" />
+
